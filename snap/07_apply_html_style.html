@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05</title>
+</head>
+<body>
+  <span>Test text</span>
+  <div id="container"></div>
+  <span>Test text</span>
+  <script src="../node_modules/snapsvg/dist/snap.svg-min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    (function(container) {
+
+      var paper = Snap().remove().attr({style: "float: right;"});
+      paper.circle(100, 100, 80).attr({fill: "red", stroke: "orange", strokeWidth: 15});
+      paper.appendTo(container);
+
+    })(document.querySelector('#container'));
+  }, false);
+  </script>
+</body>
+</html>

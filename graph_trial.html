@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>graph_trial</title>
+</head>
+<body>
+  <div id="container"></div>
+  <script src="node_modules/snapsvg/dist/snap.svg-min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    (function(container) {
+
+      var paperSize = 500;
+      var circleSize = 16;
+
+      var paper = Snap(paperSize, paperSize, 400, 300).remove();
+
+      var circles = [{x: 100, y: 100}];
+      for (var i = 0; i < 16; i++) {
+        var c = circles[i];
+
+        var x = Math.random() * paperSize;
+        if (x > paperSize - 16) {
+
+        }
+        var y = Math.random() * paperSize;
+        if (x > paperSize - 16) {
+
+        }
+
+        paper.circle(x, y, circleSize).attr({fill: "#999", stroke: "#CCC", strokeWidth: 2});
+      }
+
+      paper.appendTo(container);
+
+    })(document.querySelector('#container'));
+  }, false);
+  </script>
+</body>
+</html>

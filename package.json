@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "npm": "^5.4.2",
+    "snapsvg": "^0.5.1"
+  },
+  "name": "svg_lib_trial",
+  "description": "## Raphaël.js https://dmitrybaranovskiy.github.io/raphael/",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
